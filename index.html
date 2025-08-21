@@ -7,6 +7,7 @@
     <title>Tiến Đạt & Mỹ Duyên</title>
     <link rel="stylesheet" href="css/heart-rain.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/save-the-date.css" />
     <link rel="icon" type="image/webp" sizes="32x32" href="./img/love-small.webp" />
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700&display=swap" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
@@ -25,7 +26,7 @@
       Mỹ Duyên
     </header>
     <div class="heart-rain"></div>
-    <header class="hero">
+    <!-- <header class="hero">
       <div class="overlay"></div>
       <div class="hero-content">
         <h1>Thiệp cưới</h1>
@@ -34,71 +35,48 @@
         <p class="wedding-time">Thời gian: <span id="wedding-time">11:00, 25/01/2026</span></p>
         <p class="wedding-place">Địa điểm: <span id="wedding-place">Nhà hàng Hoa Sen, TP.HCM</span></p>
       </div>
-    </header>
-    <!-- <section id="hero" class="editable-parent scroll-to" style="min-height: 808px">
-      <div class="ht-slideshow">
-        <div class="ht-slides">
-          <div class="ht-slide ht-slide-0 active" style="background-image: url('/images/album1.png')"></div>
-        </div>
-      </div>
-      <div class="children" style="display: block">
-        <div class="" style="min-height: 919px">
-          <div class="container" style="z-index: 2; margin-top: 10vh">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="hero-wrapper v-center">
-                  <h2 data-animation-direction="fade" data-animation-delay="600" class="animate-fade animation-fade">Save the Date</h2>
-                  <h1 class="hero-title light">
-                    <span
-                      class="d-block d-sm-inline animate-from-right animation-from-right editable"
-                      data-animation-direction="from-right"
-                      data-animation-delay="300"
-                      id="welcome_male-name"
-                      >Tiến Đạt</span
-                    >
-                    <small
-                      class="d-block d-sm-inline animate-from-top animation-from-top"
-                      data-animation-direction="from-top"
-                      data-animation-delay="300"
-                      >&amp;</small
-                    >
-                    <span
-                      class="d-block d-sm-inline animate-from-left animation-from-left editable"
-                      data-animation-direction="from-left"
-                      data-animation-delay="300"
-                      id="welcome_female-name"
-                      >Mỹ Duyên</span
-                    >
-                  </h1>
-
-                  <div
-                    class="hero-subtitle light animate-fade animation-fade edit-inactive"
-                    id="preview-datepickerss"
-                    data-animation-direction="fade"
-                    data-animation-delay="1000"
-                  >
-                    25 tháng 01 2026
-                  </div>
-
-                  <div style="display: flex; justify-content: center" class="edit-active">
-                    <div class="input-group date" id="reservationdatetime" data-target-input="nearest" style="width: 300px">
-                      <input
-                        type="text"
-                        class="form-control datetimepicker-input editing-border flatpickr-input"
-                        data-target="#reservationdatetime"
-                        id="datepickerss"
-                        value="2026-01-25T11:00"
-                        readonly="readonly"
-                      />
-                    </div>
-                  </div>
-
-                  <div data-animation-direction="fade" data-animation-delay="1000" class="animate-fade animation-fade">
-                    <a href="#rsvp" class="btn btn-light scrollto" style="width: 229px"
-                      ><span class="h-lines"></span><span class="v-lines"></span><span class="h-lines"></span><span class="v-lines"></span>Gửi Lời
-                      Chúc</a
-                    >
-                  </div>
+    </header> -->
+    <section class="save-the-date-section" id="save-the-date">
+      <div class="save-the-date-overlay"></div>
+      <div class="save-the-date-frame">
+        <div class="save-the-date-row">
+          <div class="save-the-date-col save-the-date-col-left">
+            <div class="save-the-date-title-group center">
+              <div class="save-the-date-footer-style">
+                Save<br />
+                <small>the</small><br />
+                Date
+              </div>
+            </div>
+          </div>
+          <div class="save-the-date-col save-the-date-col-right">
+            <div class="save-the-date-info">
+              <div class="save-the-date-names">
+                <div class="save-the-date-groom">Tiến Đạt</div>
+                <div class="save-the-date-and">&amp;</div>
+                <div class="save-the-date-bride">Mỹ Duyên</div>
+              </div>
+              <div class="save-the-date-message">Một lời chúc của bạn chắc chắn sẽ làm cho đám cưới của chúng mình có thêm một niềm hạnh phúc!</div>
+              <div class="save-the-date-date-group">
+                <div class="save-the-date-date" style="margin-top: 0.8em;">25 tháng 01 năm 2026</div>
+                <div class="save-the-date-date" style="margin-top: 0; margin-bottom: 0.8em; font-size: 1.2rem">( 07.12 Ất Tỵ )</div>
+              </div>
+              <div class="save-the-date-countdown">
+                <div class="countdown-box">
+                  <div class="countdown-value" id="countdown-days">0</div>
+                  <div class="countdown-label">Ngày</div>
+                </div>
+                <div class="countdown-box">
+                  <div class="countdown-value" id="countdown-hours">0</div>
+                  <div class="countdown-label">Giờ</div>
+                </div>
+                <div class="countdown-box">
+                  <div class="countdown-value" id="countdown-minutes">0</div>
+                  <div class="countdown-label">Phút</div>
+                </div>
+                <div class="countdown-box">
+                  <div class="countdown-value" id="countdown-seconds">0</div>
+                  <div class="countdown-label">Giây</div>
                 </div>
               </div>
             </div>
@@ -107,108 +85,7 @@
       </div>
     </section>
 
-    <section
-      id="invitation"
-      class="editable-parent parallax-background bg-color-overlay padding-divider-top section-divider-bottom-1"
-      style="
-        background-image: url('https://thiepcuoionline.huythanhjewelry.vn/images/large.webp');
-        background-position: 50% 50%;
-        background-size: cover;
-        background-attachment: scroll;
-      "
-    >
-      <div class="children" style="display: block">
-        <div>
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12">
-                <h1 class="section-title light">The Big Day!</h1>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 center">
-                <div class="invite neela-style animate-from-left animation-from-left" data-animation-direction="from-left" data-animation-delay="100">
-                  <span class="h-lines"></span><span class="v-lines"></span><span class="h-lines"></span><span class="v-lines"></span>
-                  <div class="invite_title">
-                    <div class="text">Save<small>the</small>Date</div>
-                  </div>
-
-                  <div class="invite_info px-2 px-lg-4">
-                    <h2 class="fs-1">
-                      <span id="invitation_male-name" class="editable">Tiến Đạt</span>
-                      <small>&amp;</small>
-                      <span id="invitation_female-name" class="editable" style="text-wrap: nowrap">Mỹ Duyên</span>
-                    </h2>
-
-                    <div class="editable font-h3" id="big_day_invitation">
-                      Một lời chúc của bạn chắc chắn sẽ làm cho đám cưới của chúng mình có thêm một niềm hạnh phúc!
-                    </div>
-                    <div class="center m-0 mt-2">
-                      <a
-                        href="#rsvp"
-                        class="btn btn-primary reverse scrollto text-white px-2"
-                        style="min-width: 240px; max-width: 240px; width: 255px"
-                        ><span class="h-lines"></span><span class="v-lines"></span><span class="h-lines"></span><span class="v-lines"></span>Gửi lời
-                        chúc</a
-                      >
-                    </div>
-                    <div class="center m-0">
-                      <a
-                        href="/dat-duyen-25012026-1100/rsvp"
-                        target="_blank"
-                        class="btn btn-primary reverse text-white px-2 mt-2"
-                        style="min-width: 240px; max-width: 240px; width: 255px"
-                        ><span class="h-lines"></span><span class="v-lines"></span><span class="h-lines"></span><span class="v-lines"></span>Xác nhận
-                        tham dự</a
-                      >
-                    </div>
-                    <div class="date">
-                      <span id="invitation_date" class="">25 tháng 01 2026</span>
-                    </div>
-
-                    <div class="count-down-clock">
-                      <div
-                        id="clock"
-                        data-date="2026-01-25"
-                        data-text-day="Ngày"
-                        data-text-hour="Giờ"
-                        data-text-minute="Phút"
-                        data-text-second="Giây"
-                      >
-                        <div class="box">
-                          <div>169</div>
-                          <span>Ngày</span>
-                        </div>
-                        <div class="box">
-                          <div>13</div>
-                          <span>Giờ</span>
-                        </div>
-                        <div class="box">
-                          <div>57</div>
-                          <span>Phút</span>
-                        </div>
-                        <div class="box">
-                          <div>07</div>
-                          <span>Giây</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    -->
-
-    <section
-      id="guestbook"
-      class="guestbook-section guestbook-section-bg scroll-to"
-      style="background: linear-gradient(5deg, #ee8584 50%, #f6f6f6 50%)"
-    >
+    <section id="guestbook" class="guestbook-section guestbook-section-bg scroll-to" style="background: #ee8584">
       <div class="guestbook-section-inner center">
         <div class="guestbook-form-wrapper center">
           <h2 class="section-title guestbook text-center title-text" style="position: relative; z-index: 2">Sổ Lưu Bút</h2>
@@ -226,7 +103,7 @@
             onsubmit="return handleSubmit(event);"
           >
             <div class="guestbook-input-group">
-              <input type="text" name="entry.1498135098" placeholder="Họ và tên" class="guestbook-input" required id="guest-name" />
+              <input type="text" name="entry.1498135098" placeholder="Xin điền đầy đủ Họ và Tên" class="guestbook-input" required id="guest-name" />
               <label id="name-error" class="guestbook-error" for="guest-name" style="visibility: hidden"> Vui lòng nhập tên của bạn. </label>
             </div>
 
@@ -237,13 +114,18 @@
                   rows="3"
                   class="guestbook-input"
                   name="entry.2606285"
-                  placeholder="Lời chúc mừng"
+                  placeholder="Xin để lại lời chúc dành cho Cô dâu & Chú rể"
                   required
                   style="resize: none; height: 150px; width: 100%"
                 ></textarea>
               </div>
               <label id="content-error" class="guestbook-error" for="content" style="visibility: hidden"> Vui lòng nhập lời chúc. </label>
             </div>
+
+            <div class="guestbook-input-group" style="margin-bottom: 1em;">
+              <input type="text" name="entry.877086558" placeholder="Quý khách có thể tham dự không?" class="guestbook-input" id="invite" required/>
+            </div>
+
             <input type="hidden" name="fvv" value="1" />
             <input type="hidden" name="pageHistory" value="0" />
 
@@ -353,5 +235,6 @@
         return false; // ngăn redirect
       }
     </script>
+    <script src="js/save-the-date-countdown.js"></script>
   </body>
 </html>

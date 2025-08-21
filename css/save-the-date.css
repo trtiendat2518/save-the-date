@@ -1,0 +1,314 @@
+/* Save the Date Section Styles */
+.save-the-date-section {
+  position: relative;
+  background: url('../img/background-save-the-date.webp');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.save-the-date-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f2bcbcab; /* semi-transparent pink */
+  z-index: 2;
+}
+.save-the-date-frame {
+  position: relative;
+  z-index: 3;
+  border-radius: 24px;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.10);
+  padding: 0;
+  max-width: 900px;
+  width: 95vw;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.save-the-date-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 460px;
+}
+.save-the-date-col {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 36px 18px;
+}
+.save-the-date-col-left {
+  background: #fefefe00;
+  border-right: 1.5px solid #f2bcbc;
+  position: relative;
+}
+.save-the-date-title-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  padding: 40px;
+}
+.save-the-date-title-group .section-title {
+  font-size: 3.2rem;
+  color: #fff;
+  font-weight: 550;
+  line-height: 1.1;
+  text-align: left;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+}
+.save-the-date-the {
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+}
+.save-the-date-leaf {
+  width: 100px;
+  position: absolute;
+}
+.save-the-date-leaf.top {
+  top: 150px;
+  left: 250px;
+  transform: rotate(330deg);
+}
+.save-the-date-leaf.bottom {
+  bottom: 150px;
+  left: 120px;
+  transform: rotate(330deg);
+}
+.save-the-date-col-right {
+  background: #ee8584a6;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.save-the-date-info {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+  text-align: center;
+}
+.save-the-date-names {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.6em;
+}
+.save-the-date-and {
+  font-size: 1.3rem;
+  color: #fff;
+  margin: 0.1em 0;
+}
+.save-the-date-message {
+  font-size: 1.02rem;
+  color: #fff;
+  margin-bottom: 1.1em;
+  margin-top: 0.1em;
+}
+.save-the-date-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+  margin-bottom: 1.3em;
+}
+.save-the-date-btn {
+  background: transparent;
+  border: 1.5px solid #fff;
+  color: #fff;
+  padding: 0.55em 1.4em;
+  border-radius: 7px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.save-the-date-btn.secondary {
+  background: transparent;
+  border: 1.5px solid #fff;
+  color: #fff;
+}
+.save-the-date-btn:hover {
+  background: #fff;
+  color: #ee8584;
+}
+.save-the-date-date {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+  margin: 1.2em 0 0.7em 0;
+}
+.save-the-date-countdown {
+  display: flex;
+  justify-content: center;
+  gap: 1.3em;
+  margin-top: 0.5em;
+}
+.countdown-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.countdown-value {
+  font-size: 1.7rem;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1;
+}
+.countdown-label {
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 0.1em;
+}
+@media (max-width: 700px) {
+  .save-the-date-row {
+    flex-direction: column;
+  }
+  .save-the-date-col-left, .save-the-date-col-right {
+    border-right: none;
+    border-bottom: 1.5px solid #f2bcbc;
+  }
+  .save-the-date-col {
+    padding: 18px 8px;
+  }
+  .save-the-date-info {
+    max-width: 98vw;
+  }
+}
+
+.save-the-date-footer-style {
+  font-size: 3.1rem;
+  color: #fff;
+  font-weight: 600;
+  line-height: 0.7;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+  margin-top: 0;
+  position: relative;
+  display: inline-block;
+}
+.save-the-date-footer-style::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('../img/flower-large-color.svg') no-repeat center center;
+  background-size: contain;
+  z-index: 1;
+  left: 50px;
+  bottom: 70px;
+  transform: rotate(0deg);
+  opacity: 0.7;
+}
+.save-the-date-footer-style::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('../img/flower-large-color.svg') no-repeat center center;
+  background-size: contain;
+  z-index: 1;
+  left: -50px;
+  bottom: -70px;
+  transform: rotate(180deg);
+  opacity: 0.7;
+}
+@media (max-width: 900px) {
+  .save-the-date-footer-style::before{
+    width: 100%;
+    height: 100%;
+    left: 50px;
+    bottom: 60px;
+    transform: rotate(350deg);
+    opacity: 0.7;
+  }
+  .save-the-date-footer-style::after {
+    width: 100%;
+    height: 100%;
+    left: -50px;
+    bottom: -60px;
+    transform: rotate(170deg);
+    opacity: 0.7;
+  }
+}
+@media (max-width: 600px) {
+  .save-the-date-footer-style::before {
+    width: 100%;
+    height: 100%;
+    left: 50px;
+    bottom: 60px;
+    transform: rotate(350deg);
+    opacity: 0.7;
+  }
+  .save-the-date-footer-style::after {
+    width: 100%;
+    height: 100%;
+    left: -50px;
+    bottom: -60px;
+    transform: rotate(170deg);
+    opacity: 0.7;
+  }
+}
+
+
+.save-the-date-date-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.2em 0 0.7em 0;
+}
+.save-the-date-date-group::before,
+.save-the-date-date-group::after {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 18px;
+  background: url('../img/line-1.svg') no-repeat center center;
+  background-size: contain;
+  margin: 0 auto;
+}
+.save-the-date-date-group::before {
+  margin-top: 8px;
+}
+.save-the-date-date-group::after {
+  margin-top: 8px;
+  transform: rotate(180deg);
+}
+@media (max-width: 700px) {
+  .save-the-date-date-group::before,
+  .save-the-date-date-group::after {
+    width: 80px;
+    height: 12px;
+  }
+}
+.save-the-date-frame .section-title {
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.save-the-date-footer-style small {
+    font-size: 12pt;
+    position: relative;
+    top: -8px;
+    -khtml-opacity: 0.5;
+    -moz-opacity: 0.5;
+}
