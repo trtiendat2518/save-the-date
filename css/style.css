@@ -1,0 +1,763 @@
+body {
+    padding-top: 60px;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #fff6f6;
+    color: #4d2c1d;
+}
+
+
+
+header.hero {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1050&q=80') center/cover no-repeat;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header.hero .overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.3);
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: #FF8A8A;
+    text-align: center;
+}
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin: 0 0 10px;
+    letter-spacing: 2px;
+}
+.hero-content h2 {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+}
+.bride-groom, .wedding-time, .wedding-place {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+section {
+    max-width: 98vw;
+    width: 98vw;
+    padding: 32px 2vw;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.section-invite, .section-map {
+    background: #fff;
+}
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+.footer-and {
+    font-size: 20px;
+}
+.center {
+    text-align: center;
+}
+.section-guestbook {
+    background: #FFF0F5;
+    max-width: 1100px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 440px;
+}
+section.invitation {
+    text-align: center;
+}
+section.guestbook {
+    border-left: 3px solid #FF8A8A;
+    border-right: 3px solid #FF8A8A;
+    padding: 36px 0 48px 0;
+    margin: 40px auto;
+    max-width: 600px;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+}
+/* Đã chuyển hình nền hoa thành ảnh thực tế trong form */
+.guestbook-form-flower {
+    display: block;
+    margin: 0 auto;
+    max-width: 420px;
+    width: 100%;
+    opacity: 0.92;
+    pointer-events: none;
+    position: relative;
+    z-index: 1;
+    margin-top: 18px;
+}
+
+.guestbook-title {
+    color: #FF8A8A;
+    font-size: 2.7rem;
+    font-family: 'Dancing Script', cursive, sans-serif;
+    margin: 0 0 16px 0;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.guestbook-divider {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.footer-names-and {
+    font-size: 20px;
+}
+#wishForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 0;
+}
+#wishForm input, #wishForm textarea, .guestbook-input {
+    width: 100%;
+    max-width: 480px;
+    font-size: 1.1rem;
+    padding: 16px 18px;
+    border: 1.5px solid #ccc;
+    border-radius: 12px;
+    background: #fff8f8;
+    margin-bottom: 0;
+    color: #333;
+    font-family: inherit;
+    box-sizing: border-box;
+    box-shadow: 0 2px 12px 0 rgba(255,138,138,0.10);
+    transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+}
+#wishForm input:focus, #wishForm textarea:focus, .guestbook-input:focus {
+    border-color: #ffb6b9;
+    box-shadow: 0 0 0 2px #ffb6b999;
+    outline: none;
+}
+#wishForm input:invalid, #wishForm textarea:invalid, .guestbook-input:invalid {
+    border-color: #FF3B3B;
+    box-shadow: 0 0 0 2px #FF3B3B33;
+}
+    border-color: #FF3B3B;
+    box-shadow: 0 0 0 2px #FF3B3B33;
+}
+.input-error {
+    color: #FF3B3B;
+    font-size: 0.97rem;
+    margin: 4px 0 0 8px;
+    text-align: left;
+    min-height: 18px;
+    display: block;
+}
+.footer-flower-svg {
+  height: 120px;
+  width: auto;
+  display: block;
+  opacity: 0.5;
+}
+.footer-leaf.left {
+    transform: rotate(233deg);
+}
+.footer-leaf.right {
+    transform: rotate(45deg);
+}
+.footer-leaf.right .footer-flower-svg {
+  transform: none;
+}
+#wishForm input::placeholder, #wishForm textarea::placeholder, .guestbook-input::placeholder {
+    color: #b97a7a;
+    opacity: 1;
+    font-size: 1.05rem;
+}
+    color: #b97a7a;
+    opacity: 1;
+    font-size: 1.05rem;
+}
+#wishForm textarea, .guestbook-input[type="textarea"], textarea.guestbook-input {
+    min-height: 100px;
+    resize: vertical;
+    background: #fff8f8;
+    border-radius: 14px;
+    box-shadow: 0 2px 14px 0 rgba(255,138,138,0.11);
+}
+#wishForm button[type="submit"] {
+    background: #FF8A8A;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 16px 56px;
+    font-size: 1.15rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    box-shadow: none;
+    outline: none;
+    transition: none;
+}
+#wishForm button[type="submit"]::before {
+    content: "";
+    position: absolute;
+    top: 8px; left: 8px; right: 8px; bottom: 8px;
+    border: 2px solid #FF8A8A;
+    border-radius: 4px;
+    pointer-events: none;
+    transition: border-color 0.35s cubic-bezier(.4,0,.2,1);
+}
+#wishForm button[type="submit"]:hover {
+    /* Không đổi màu khi hover, chỉ giữ hiệu ứng box-shadow nhẹ nếu muốn */
+    box-shadow: 0 2px 12px 0 #FF8A8A22;
+}
+#wishForm button[type="submit"]:hover::before {
+    border-color: #FF8A8A;
+}
+#wishForm button[type="submit"]::before {
+    content: "";
+    position: absolute;
+    top: 8px; left: 8px; right: 8px; bottom: 8px;
+    border: 2px solid #FF8A8A;
+    border-radius: 4px;
+    pointer-events: none;
+    transition: border-color 0.2s;
+}
+#wishForm button[type="submit"]:hover {
+    background: #FF8A8A;
+    color: #fff;
+    box-shadow: 0 2px 12px 0 #FF8A8A22;
+}
+#wishForm button[type="submit"]:hover::before {
+    border-color: #fff;
+}
+#wishForm button[type="submit"]:hover {
+    background: #FF8A8A;
+    color: #fff;
+    box-shadow: 0 0 0 2px #FF8A8A44;
+}
+#wishStatus {
+    margin-top: 16px;
+    min-height: 20px;
+    color: #27ae60;
+    font-weight: bold;
+    text-align: center;
+}
+section.guestbook {
+    background-image: linear-gradient(5deg, #ee8584 50%, #f6f6f6 50%), url('../img/flower-large.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, right bottom;
+    background-size: cover, 420px auto;
+    border-left: 3px solid #FF8A8A;
+    border-right: 3px solid #FF8A8A;
+    padding: 36px 0 48px 0;
+    margin: 40px auto;
+    max-width: 600px;
+    background: #fff;
+    position: relative;
+}
+.guestbook-btn {
+    background: linear-gradient(90deg, #FF8A8A 60%, #ffc1c1 100%);
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    padding: 14px 44px;
+    font-size: 1.15rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: none;
+    cursor: pointer;
+    box-shadow: 0 3px 18px 0 rgba(255,138,138,0.13);
+    transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+.guestbook-btn:hover, section.guestbook button:hover {
+    background: #FF8A8A;
+    color: #fff;
+    border: 2.5px solid #ff4e7a;
+    box-shadow: 0 8px 28px 0 rgba(255,138,138,0.21);
+    transform: translateY(-2px) scale(1.04);
+}
+.guestbook-btn:active, section.guestbook button:active {
+    background: #ffb6b9;
+    color: #fff;
+    border: 2.5px solid #ff4e7a;
+    transform: scale(0.98);
+    background: #FF8A8A;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+section.guestbook button:hover {
+    background: #FF8A8A;
+}
+section.map-section h3 {
+    margin-bottom: 10px;
+}
+.map-embed iframe {
+    border-radius: 8px;
+    width: 100%;
+    height: 300px;
+}
+.sticky-header {
+    font-family: 'Dancing Script', cursive, sans-serif;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 54px;
+    background: #fff;
+    color: #FF8A8A;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 54px;
+    z-index: 10001;
+    box-shadow: 0 2px 8px rgba(226,85,161,0.06);
+    user-select: none;
+}
+
+/* Wedding Gift Box (Hộp mừng cưới) Styles */
+.copy-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05em;
+  padding: 2px 8px;
+  margin-left: 6px;
+  border: 1.5px solid #fff;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.18);
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.18s, border-color 0.18s, color 0.18s;
+  vertical-align: middle;
+  box-shadow: 0 1px 6px #fff2;
+}
+.copy-btn:hover, .copy-btn:focus {
+  background: #fff;
+  color: #ee8584;
+  border-color: #ee8584;
+}
+.copy-btn.copied {
+  background: #3ec97a;
+  color: #fff;
+  border-color: #3ec97a;
+}
+
+.donate-card-frame {
+  border: 2px solid #fff;
+  background: #ee8584;
+  border-radius: 24px;
+  padding: 14px 10px 10px 10px;
+  margin: 0 0 16px 0;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  box-shadow: 0 2px 18px #ee858422;
+}
+@media (max-width: 900px) {
+  .donate-card-frame {
+    padding: 12px 4px 8px 4px;
+    margin-bottom: 18px;
+  }
+}
+
+.donate-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 32px auto;
+}
+.donate-box .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.section-title.donate {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+.section-desc.donate {
+    margin-bottom: 20px;
+}
+.section-title.guestbook {
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.donate-card {
+    padding: 20px;
+}
+@media (max-width: 900px) {
+  .donate-box .row {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+}
+.donate-card-title {
+  font-family: 'Dancing Script', cursive, sans-serif;
+  font-size: 1.7rem;
+  color: #fff;
+  margin-bottom: 25px;
+  margin-top: 18px;
+  letter-spacing: 1.2px;
+  text-align: center;
+  font-weight: bold;
+}
+.donate-info {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #fff;
+  background: rgba(255,255,255,0.09);
+  border-radius: 8px;
+  padding: 10px 14px 8px 14px;
+  text-align: center;
+  word-break: break-word;
+  font-family: inherit;
+  line-height: 1.5;
+}
+.qr-code-image {
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 12px #fff4;
+  margin-bottom: 10px;
+}
+.title-text {
+    color: #FF8A8A;
+    font-family: Marmelad, sans-serif;
+    font-weight: 400;
+}
+.guestbook-form-wrapper {
+    padding: 30px;
+    background: #fff;
+    border-radius: 18px;
+    display: inline-block;
+}
+/* End Wedding Gift Box Styles */
+
+.guestbook-btn {
+    background: #fff;
+    color: #FF8A8A;
+    border: 2.5px solid #FF8A8A;
+    border-radius: 16px;
+    padding: 14px 44px;
+    font-size: 1.18rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: none;
+    cursor: pointer;
+    box-shadow: 0 2px 12px 0 rgba(255,138,138,0.09);
+    transition: background 0.18s, color 0.18s, box-shadow 0.18s, border 0.18s, transform 0.15s;
+    outline: none;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+.guestbook-btn:active {
+    background: #ffb6b9;
+    color: #fff;
+    border: 2.5px solid #ff4e7a;
+    transform: scale(0.97);
+    box-shadow: 0 2px 8px 0 rgba(255,138,138,0.14);
+}
+.guestbook-btn:focus {
+    outline: 2px solid #ffb6b9;
+    outline-offset: 2px;
+}
+
+
+/* Hiệu ứng trái tim rơi */
+
+.wedding-footer {
+  background: #F49CA4;
+  color: #fff;
+  border-radius: 18px 18px 0 0;
+  margin: 0 auto 0 auto;
+  box-shadow: 0 -2px 12px 0 #F49CA455;
+  padding: 36px 0 18px 0;
+  text-align: center;
+  position: relative;
+  max-width: 100vw;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.footer-leaf svg {
+  display: block;
+  opacity: 0.7;
+}
+.footer-names {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #fff;
+  text-shadow: 0 2px 8px #c77c7c44;
+  margin: 0 12px;
+  letter-spacing: 1.5px;
+}
+.footer-icons-left, .footer-icons-right {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+  min-width: 56px;
+  z-index: 2;
+}
+.footer-icons-left {
+  margin-left: 24px;
+}
+.footer-icons-right {
+  margin-right: 24px;
+}
+.footer-round-icon {
+  background: #fff2;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  box-shadow: 0 2px 12px #c77c7c33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.18s, background 0.18s;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+.footer-round-icon svg {
+  width: 28px;
+  height: 28px;
+}
+.footer-round-icon:hover {
+  background: #fff4;
+  box-shadow: 0 4px 18px #c77c7c55;
+}
+.footer-copyright {
+  position: absolute;
+  left: 0; right: 0; bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.02rem;
+  opacity: 0.82;
+  color: #fff;
+  letter-spacing: 0.1px;
+}
+.footer-copyright a {
+  color: #fff;
+  text-decoration: underline dotted;
+  opacity: 0.9;
+  font-size: 1rem;
+}
+.footer-names::after, .footer-names::before {
+    content: "";
+    width: 100px;
+    height: 87px;
+    position: absolute;
+    bottom: 22px;
+    right: -12px;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-image: url(../img/flower-small.svg);
+    background-size: contain;
+    opacity: 0.5;
+    transform: rotate(50deg);
+    background-position: center center;
+}
+@media (max-width: 991px) {
+    .footer-names::after, .footer-names::before {
+        width: 80px;
+        height: 71px;
+        bottom: 26px;
+        right: 10px;
+    }
+}
+@media (max-width: 600px) {
+  .wedding-footer { flex-direction: column; padding: 24px 0 12px 0; }
+  .footer-content { gap: 12px; }
+  .footer-names { font-size: 1.2rem; }
+  .footer-icons-left, .footer-icons-right { flex-direction: row; margin: 0; gap: 10px; min-width: 0; }
+  .footer-leaf svg { width: 24px; height: 36px; }
+}
+
+  background: #F49CA4;
+  color: #fff;
+  border-radius: 18px 18px 0 0;
+  margin: 0 auto 0 auto;
+  box-shadow: 0 -2px 12px 0 #F49CA455;
+  padding: 36px 0 18px 0;
+  text-align: center;
+  position: relative;
+  max-width: 100vw;
+  min-height: 120px;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 0;
+  position: relative;
+}
+.footer-icon svg {
+  display: block;
+  opacity: 0.7;
+}
+.footer-names {
+  font-family: 'Dancing Script', cursive, sans-serif;
+  font-size: 2.3rem;
+  font-weight: bold;
+  line-height: 0.8;
+  color: #fff;
+  text-shadow: 0 2px 8px #c77c7c44;
+  margin: 0 12px;
+  padding: 26px 64px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+@media (max-width: 991px) {
+    .footer-names::after {
+        right: auto;
+        left: 10px;
+    }
+}
+@media (max-width: 991px) {
+    .footer-names small {
+        top: -4px;
+    }
+}
+.footer-names small {
+    font-size: 12pt;
+    position: relative;
+    top: -8px;
+    -khtml-opacity: 0.5;
+    -moz-opacity: 0.5;
+    opacity: .5;
+}
+.footer-names::after {
+    top: auto;
+    right: auto;
+    left: -12px;
+    -webkit-transform: rotate(-130deg);
+    -moz-transform: rotate(-130deg);
+    -ms-transform: rotate(-130deg);
+    -o-transform: rotate(-130deg);
+    transform: rotate(-130deg);
+}
+.footer-copyright {
+  margin-top: 16px;
+  font-size: 1.07rem;
+  opacity: 0.85;
+  color: #fff;
+}
+.footer-copyright a {
+  color: #fff;
+  text-decoration: underline dotted;
+  opacity: 0.9;
+  font-size: 1rem;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-30px) scale(1);
+        opacity: 0.9;
+    }
+    90% {
+        opacity: 0.9;
+    }
+    100% {
+        transform: translateY(100vh) scale(0.7);
+        opacity: 0.05;
+    }
+}
+
+/* Popup */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
+}
+.popup-content {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    min-width: 320px;
+    max-width: 90vw;
+    position: relative;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+.popup-content h3 {
+    margin-top: 0;
+}
+.popup-content .close {
+    position: absolute;
+    top: 12px; right: 18px;
+    font-size: 1.5rem;
+    color: #FF8A8A;
+    cursor: pointer;
+}
+#wishForm input, #wishForm textarea {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+    border: 1px solid #FF8A8A;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #fff6f6;
+}
+#wishForm textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+#wishForm button[type="submit"] {
+    background: #FF8A8A;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 28px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#wishForm button[type="submit"]:hover {
+    background: #a93226;
+}
+#wishStatus {
+    margin-top: 10px;
+    min-height: 20px;
+    color: #27ae60;
+    font-weight: bold;
+    text-align: center;
+}

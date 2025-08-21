@@ -1,0 +1,33 @@
+/* Hiệu ứng trái tim rơi */
+.heart-rain {
+    pointer-events: none;
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    z-index: 9999;
+}
+.heart {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+    opacity: 0.85;
+    animation: fall linear;
+}
+.heart svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+@keyframes fall {
+    0% {
+        transform: translateY(-30px) scale(1);
+        opacity: 0.9;
+    }
+    90% {
+        opacity: 0.9;
+    }
+    100% {
+        transform: translateY(100vh) scale(0.7);
+        opacity: 0.05;
+    }
+}
